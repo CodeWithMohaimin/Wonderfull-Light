@@ -12,6 +12,10 @@ body
     min-height: 100vh;
     background: #222;
 }
+body.on
+{
+    background: radial-gradient(#555,#111);
+}
 .bulb
 {
     position: relative;
@@ -20,6 +24,23 @@ body
     background: #444;
     border-radius: 50%;
     z-index: 2;
+}
+body.on .bulb
+{
+    background: #fff;
+    box-shadow: 
+    0 0 50px #fff,
+    0 0 100px #fff,
+    0 0 120px #fff,
+    0 0 140px #fff,
+    0 0 160px #fff,
+    0 0 180px #fff,
+    0 0 200px #fff,
+    0 0 230px #fff,
+    0 0 250px #fff,
+    0 0 340px #fff,
+    0 0 380px #fff;
+    
 }
 .bulb::before
 {
@@ -32,6 +53,26 @@ body
     background: #444;
     border-top: 30px solid #000;
     border-radius: 10px;
+}
+body.on .bulb::before
+{
+    background: #fff;
+}
+body.on .bulb::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    filter: blur(40px);
+
+
+
 }
 .bulb span:nth-child(1)
 {
@@ -46,7 +87,10 @@ body
     border-bottom-right-radius: 40px;
     box-shadow: 20px 20px 0 10px #444;
 }
-
+body.on .bulb span:nth-child(1)
+{
+    box-shadow: 20px 20px 0 10px #fff;
+}
 .bulb span:nth-child(2)
 {
     position: absolute;
@@ -59,6 +103,11 @@ body
     transform: rotate(17deg);
     border-bottom-left-radius: 40px;
     box-shadow: -20px 20px 0 10px #444;
+}
+body.on .bulb span:nth-child(2)
+{
+    box-shadow: -20px 20px 0 10px #fff;
+
 }
 .wire
 {
@@ -109,7 +158,11 @@ body
     border-radius: 4px;
 
 }
-.on .switch .btn::after
+.on .switch .btn::before
 {
     top: 15%;
+}
+br{
+    margin-top: 80%;
+    
 }
