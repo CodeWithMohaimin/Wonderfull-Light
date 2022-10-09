@@ -70,9 +70,6 @@ body.on .bulb::after
     background: #fff;
     border-radius: 50%;
     filter: blur(40px);
-
-
-
 }
 .bulb span:nth-child(1)
 {
@@ -119,7 +116,6 @@ body.on .bulb span:nth-child(2)
     background: #000;
     z-index: 1;
 }
-
 .switch
 {
     position: absolute;
@@ -164,5 +160,4 @@ body.on .bulb span:nth-child(2)
 }
 br{
     margin-top: 80%;
-    
 }

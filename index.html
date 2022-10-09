@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonderfull Light</title>
         <!-- CSS link here -->
-      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
         <!-- This is a Favicon-->
-        <link rel="shortcut icon" href="img/wonderfull light on or off.jpg" type="image/x-icon">
-            
-    </head>
+    <link rel="shortcut icon" href="img/wonderfull light on or off.jpg" type="image/x-icon">
+    <script defer src="app.js"></script>
+</head>
 <body>
             <div class="light">
                 <div class="wire"></div>
@@ -25,23 +25,5 @@
 
             <!-- Here this audio sound on click -->
             <audio id="audio" src="audio/click.mp3" autoplay="false"></audio>
-
-        <script>
-            let btn = document.querySelector('.btn');
-            let body = document.querySelector('body');
-            let audio = document.querySelector('#audio');
-            btn.onclick = function(){
-                body.classList.toggle('on');
-                audio.play();
-            }
-        </script>
-
-
-
-
-
-
-
-
 </body>
 </html>
